@@ -43,7 +43,7 @@ body{
 }
 
 .home{
-    background: url(bg2.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.466), rgba(0, 0, 0, 0.466)), url(images/bg2.jpg) no-repeat ;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -182,13 +182,13 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: rgb(2, 105, 88);
+    background: rgb(1, 100, 54);
     padding-bottom: 6rem;
 }
 
 .heading{
     font-size: 35px;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -226,12 +226,13 @@ span{
 }
 
 .education{
-    background: rgb(27, 131, 114);
+    background: rgb(34, 88, 52);
+    height: 700px;
 }
 
 .edu-heading{
     font-size: 35px;
-    padding: 50px 0;
+   padding: 50px;
     text-align: center;
 }
 
@@ -239,7 +240,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 50px 0;
 }
 
 .wrapper{
@@ -328,11 +329,104 @@ span{
     height: 100%;
 }
 
+.skills{
+    padding: 0 50px;
+    background: rgb(1, 100, 54);
+    height: 700px;
+}
+
+.skills h2{
+    padding: 50px;
+    text-align: center;
+}
+
+.skills p{
+    text-align: center;
+    font-size: 18px;
+    margin: 170px 150px 25px;
+}
+
+.skills .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    background: white;
+}
+
+.skills .cells .cell img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.skills .cells .cell span{
+    font-size: 18px;
+    color: black;
+}
+
+.contacts{
+    padding: 0 50px;
+    background: rgb(34, 88, 52);
+    height: 700px;
+}
+
+.contacts .group{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.contacts .group form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 100px 0;
+}
+
+.contacts .group form input,
+.contacts .group form textarea{
+    font-family: sans-serif;
+    border: 2px solid rgb(184, 100, 5);
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contacts .group form button{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(184, 100, 5);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contacts .group form button:hover{
+    filter: brightness(.9);
+}
+
 .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: rgb(77, 74, 74);
+    background: rgba(85, 73, 73, 0.616);
     height: 50px;
 }
